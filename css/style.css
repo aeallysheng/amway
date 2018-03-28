@@ -644,7 +644,7 @@ a, a:hover {
 
    }
    .my-ctn.type1{
-    padding: 15px 30px;
+    padding: 15px 16px;
    }
    .my-ctn p{
      font-size: 16px;
@@ -677,5 +677,17 @@ a, a:hover {
    }
    .noheaderSec{
       margin-top: 100px;
+   }
+   .my-ctn.qa{
+      padding: 8px 16px;
+   }
+   .qa table td .qa_q{
+    font-size: 24px;
+   }
+   .qa table td h3{
+    line-height: 24px;
+   }
+   .qa table tr td:first-child{
+      padding-right: 0px;
    }
 }
