@@ -16,7 +16,7 @@ div.bgdiv2{
     background-size: 43%;
 }
 .noheaderSec{
-  margin-top: 130px;
+  padding-top: 170px;
 }
 
 ol, ul {
@@ -106,7 +106,7 @@ section{
 /**media Queries**/
 
 .navbar-default {
-  background: rgba(7, 75, 125, 0.8);
+  background: rgba(7, 75, 125, 0.9);
 }
 
 
@@ -147,7 +147,7 @@ section{
 }
 .navbar-default .navbar-nav>li>a {
   color: #fff;
-  padding: 0px 28px;
+  padding: 0px 18px;
   text-transform: uppercase;
 	background-color: transparent;
   border-right: 1px solid #ccc;
@@ -302,6 +302,10 @@ ol.notice_list li{
   text-align: center;
   line-height: 1.8;
 }
+.qrcode h3 span::before {
+  content: "\A";
+  white-space: pre;
+}
 .qrcode div a{
   display: block;
   text-align: center;
@@ -391,7 +395,7 @@ h3 span.month_no span{
 }
 
 .top-nav-collapse {
-  background: rgba(7, 75, 125, 0.8);
+  background: rgba(7, 75, 125, 0.9);
   padding: 25px 0;
 }
 
@@ -525,6 +529,13 @@ a, a:hover {
     margin-bottom: 0px;
   }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+   .navbar-default .navbar-nav>li>a{
+    font-size: 14px;
+    padding: 0px 14px; 
+   }
+}
+
 @media (min-width: 450px) and (max-width: 768px){
   .navbar-fixed-top {
     padding: 10px 0px;
@@ -575,7 +586,10 @@ a, a:hover {
 
    }
    .noheaderSec{
-      margin-top: 110px;
+      padding-top: 110px;
+   }
+   .event_pricediv.leaderboard div table th{
+    line-height:24px;
    }
 }
 @media (min-width: 20px) and (max-width: 450px) {
@@ -618,9 +632,9 @@ a, a:hover {
     margin-bottom: 20px;
   }
   h2 span{
-   line-height: 50px;
+   line-height: 45px;
    width: 250px;
-   height: 50px;
+   height: 45px;
    border: 1px solid #074b7d;
    border-radius: 25px;
   }
@@ -676,7 +690,7 @@ a, a:hover {
 
    }
    .noheaderSec{
-      margin-top: 100px;
+      padding-top: 100px;
    }
    .my-ctn.qa{
       padding: 8px 16px;
@@ -689,5 +703,12 @@ a, a:hover {
    }
    .qa table tr td:first-child{
       padding-right: 0px;
+   }
+  .qrcode h3 span::before {
+    content: "";
+    white-space: inherit;
+   }
+   .qrcode h3{
+    text-align: left;
    }
 }
