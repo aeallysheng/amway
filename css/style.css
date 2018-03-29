@@ -542,6 +542,11 @@ a, a:hover {
   max-width: 680px; 
   margin-bottom: 40px;
  }
+ .progressText{
+  height: 300px;
+  line-height: 250px;
+  font-size: 50px;
+ }
 /****/
 
 
@@ -551,6 +556,10 @@ a, a:hover {
 }
 
 #regi{
+  position: relative;
+  top:-100px;
+}
+#event_description{
   position: relative;
   top:-100px;
 }
