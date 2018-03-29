@@ -58,11 +58,11 @@
   <section class="">
     <h2 class="text-center wow fadeInUp"><span>完全攻略</span></h2>
     <div id="catctn"> 
-      <div class="container wow fadeInUp catmenu" >
-        <div class="col-xs-3 active"><h3 class="text-center" ><a href="#individual_walkthrough">銷售五部曲</a></h3></div>
-        <div class="col-xs-3"><h3 class="text-center"><a href="#require_walkthrough">引起需求</a></h3></div>
-        <div class="col-xs-3"><h3 class="text-center" ><a href="#prod_walkthrough">產品介紹</a></h3></div>
-        <div class="col-xs-3"><h3 class="text-center"><a href="#unbox_walkthrough">開箱文</a></h3></div>
+      <div class="container catmenu" >
+        <div id="tab1" class="col-xs-3 active"><h3 class="text-center" ><a href="#individual_walkthrough">銷售五部曲</a></h3></div>
+        <div id="tab2" class="col-xs-3"><h3 class="text-center"><a href="#require_walkthrough">引起需求</a></h3></div>
+        <div id="tab3" class="col-xs-3"><h3 class="text-center" ><a href="#prod_walkthrough">產品介紹</a></h3></div>
+        <div id="tab4" class="col-xs-3"><h3 class="text-center"><a href="#unbox_walkthrough">開箱文</a></h3></div>
       </div>
     </div>
     
@@ -168,7 +168,25 @@ https://goo.gl/HvmiQp">Amway TV 【車用空氣清淨機真有用？30秒實驗�
      var nav = document.getElementById("navbar");
      var sticky = header.offsetTop - nav.clientHeight;
      
-     window.onscroll = function() {stickyMenu()};
+     window.onscroll = function() {
+        stickyMenu()
+        var tab2Top = $("#require_walkthrough").offset().top; 
+        var tab3Top = $("#prod_walkthrough").offset().top;
+        var tab4Top = $("#unbox_walkthrough").offset().top;
+        if(window.pageYOffset< tab2Top-100){
+           $(".catmenu>div").removeClass("active");
+           $("#tab1").addClass("active");
+        }else if( (window.pageYOffset>tab2Top+100)&&(window.pageYOffset< tab3Top-100)){
+           $(".catmenu>div").removeClass("active");
+           $("#tab2").addClass("active");
+        }else if((window.pageYOffset>tab3Top+100)&&(window.pageYOffset< tab4Top-200)){
+           $(".catmenu>div").removeClass("active");
+           $("#tab3").addClass("active");
+        }else if(window.pageYOffset>tab4Top-50){
+           $(".catmenu>div").removeClass("active");
+           $("#tab4").addClass("active");
+        }
+      };
   
      window.onresize = function() {
       header.classList.remove("sticky");
@@ -189,13 +207,15 @@ https://goo.gl/HvmiQp">Amway TV 【車用空氣清淨機真有用？30秒實驗�
          $(".catmenu>div").removeClass("active");
          $(this).addClass("active");
      });
-     $(document).on('click', 'a[href^="#"]', function (event) {
-       event.preventDefault();
+     
+
+     // $(document).on('click', 'a[href^="#"]', function (event) {
+     //   event.preventDefault();
    
-       $('html, body').animate({
-           scrollTop: $($.attr(this, 'href')).offset().top
-       }, 500);
-     });
+     //   $('html, body').animate({
+     //       scrollTop: $($.attr(this, 'href')).offset().top
+     //   }, 500);
+     // });
   });
   
   
