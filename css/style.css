@@ -387,6 +387,22 @@ h3 span.month_no span{
   left:-5px;
   top:3px;
 }
+.sticky{
+  position: fixed;
+  top: 85px;
+  width: 100%;
+  background-color: #fff; 
+  border-bottom: 1px solid #ccc;
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.sticky .catmenu{
+  margin-bottom: 20px;
+}
+
+.sticky + .container{
+   padding-top: 150px;
+}
 @media (max-width: 768px) {
 .navbar-collapse {
 		background: none;
@@ -414,7 +430,60 @@ h3 span.month_no span{
 #cta-1 .nav .active {
   border-bottom: 6px solid #03a9f4;
 }
+.catmenu {
+  max-width: 700px;
+  margin-bottom: 40px;
 
+}
+.catmenu .active{
+  border-bottom: 6px solid #03a9f4;
+}
+.catmenu div h3{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.catmenu div h3 a{
+  color: #4a4a4a;
+  text-decoration: none;
+}
+.download_ctn{
+  border-top: 5px solid #03a9f4;
+  padding-bottom: 60px;
+}
+.download_ctn h3{
+    border-left: 8px solid #03a9f4;
+    padding-left: 10px;
+}
+.download_ctn ul{
+  font-size: 28px;
+
+  color: #03a9f4;
+}
+.download_ctn ul li div{
+    border-bottom: 1px solid #ccc;
+    margin-left: 50px;
+    
+}
+.download_ctn ul li div span.fa{
+  font-size: 12px;
+  margin-left: -50px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 23px;
+   
+}
+.download_ctn ul li div a{
+   display: inline-block;
+   padding-left: 50px;
+   width:  100%;
+   font-size: 16px;
+   color: #4a4a4a;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+.download_ctn ul li div:hover{
+  background-color: #fff;
+}
 
 /****/
 
@@ -474,7 +543,10 @@ a, a:hover {
 /****/
 
 
-
+#individual_walkthrough,#require_walkthrough,#prod_walkthrough,#unbox_walkthrough{
+  position: relative;
+  top:-200px;
+}
 
 
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -591,16 +663,31 @@ a, a:hover {
    .event_pricediv.leaderboard div table th{
     line-height:24px;
    }
+   .sticky {
+
+    top: 65px;
+ 
+   }
+   .sticky .catmenu{
+    margin-bottom: 15px;
+  }
+  .sticky + .container {
+      padding-top: 70px;
+   }
+   #individual_walkthrough,#require_walkthrough,#prod_walkthrough,#unbox_walkthrough{
+     position: relative;
+     top:-130px;
+   }
 }
 @media (min-width: 20px) and (max-width: 450px) {
   div.bgdiv{
    background: url(../img/waveCopy4.svg) no-repeat right 395px;
-   background-size: 100%;
+   background-size: 114%;
 
   }
   div.bgdiv2{
     background: url(../img/wave2.svg) no-repeat -171px -119px;
-    background-size: 65%;
+    background-size: 100%;
   }
   .navbar-toggle:hover, .navbar-toggle {
     background-color: #fff;
@@ -711,4 +798,37 @@ a, a:hover {
    .qrcode h3{
     text-align: left;
    }
+   .event_pricediv.leaderboard div table td {
+    padding: 10px 0px;
+   }
+   .catmenu div h3{
+     font-size: 14px;
+     margin: 12px -15px 7px -15px;
+   }
+   .download_ctn ul li div{
+
+    margin-left: 25px;
+    
+   }
+  .download_ctn ul li div span.fa{
+    margin-left: -25px;
+   
+  }
+  .download_ctn ul li div a{
+   padding-left: 25px;
+   }
+   .sticky {
+    top: 65px;
+   }
+   .sticky .catmenu{
+    margin-bottom: 10px;
+   }
+   .sticky + .container {
+      padding-top: 100px;
+   }
+   #individual_walkthrough,#require_walkthrough,#prod_walkthrough,#unbox_walkthrough{
+     position: relative;
+     top:-100px;
+   }
+
 }
