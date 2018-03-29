@@ -550,7 +550,10 @@ a, a:hover {
   top:-200px;
 }
 
-
+#regi{
+  position: relative;
+  top:-100px;
+}
 @media (min-width: 1200px) and (max-width: 1500px) {
   div.bgdiv{
    background: url(../img/waveCopy4.svg) no-repeat right 395px;
