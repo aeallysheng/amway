@@ -165,8 +165,10 @@ section{
   transition: all 0.5s;
 }
 .wrapper {
-  padding: 90px 0px 130px;
-  margin:0 -15px;
+  padding-bottom: 61.7%;
+  margin: 70px -15px 0px -15px;
+  background:url(../img/index-top.png) center top no-repeat; 
+  background-size: cover; 
 }
 
 .wrapper img{
@@ -416,7 +418,7 @@ h3 span.month_no span{
 }
 
 .wrapper {
-  padding: 75px 0px 0px 0px;
+ /* padding: 75px 0px 0px 0px;*/
 }
 
 
@@ -828,7 +830,7 @@ a, a:hover {
    }
    #individual_walkthrough,#require_walkthrough,#prod_walkthrough,#unbox_walkthrough{
      position: relative;
-     top:-100px;
+     top:-110px;
    }
 
 }

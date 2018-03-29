@@ -35,11 +35,11 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">活動辦法</a></li>
                 <li><a href="index.html#regi">產品註冊</a></li>
-                <li><a href="#feature">特惠活動</a></li>
-                <li><a href="#feature">完全攻略</a></li>
+                <li><a href="">特惠活動</a></li>
+                <li><a href="walkthrough.html">完全攻略</a></li>
                 <li><a href="leaderboard.html">榮譽榜</a></li>
-                <li><a href="#contact">業績查詢</a></li>
-                <li><a href="#contact">產品官網</a></li>
+                <li><a href="">業績查詢</a></li>
+                <li><a href="">產品官網</a></li>
               </ul>
             </div>
           </div>
@@ -49,7 +49,6 @@
       <!--/ nav-->
       <div class="container text-center">
         <div class="wrapper wow fadeInLeft delay-02s">
-          <img src="img/index-top.png">
         </div>
       </div>
     </div>
@@ -162,36 +161,46 @@ https://goo.gl/HvmiQp">Amway TV 【車用空氣清淨機真有用？30秒實驗�
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.js"></script>
   <script>
-  window.onscroll = function() {myFunction()};
+  $(document).ready(function(){
+     var header = document.getElementById("catctn");
+     header.classList.remove("sticky");
+     var nav = document.getElementById("navbar");
+     var sticky = header.offsetTop - nav.clientHeight;
+     
+     window.onscroll = function() {stickyMenu()};
   
-  window.onresize = function() {
-    header.classList.remove("sticky");
-    sticky = header.offsetTop - nav.clientHeight;
-    myFunction()
-  };
-  
-  var header = document.getElementById("catctn");
-  var nav = document.getElementById("navbar");
-  var sticky = header.offsetTop - nav.clientHeight;
-  function myFunction() {
-    
-    if (window.pageYOffset >= sticky) {
-      header.classList.add("sticky");
-    } else {
+     window.onresize = function() {
       header.classList.remove("sticky");
-    }
-  }
-  $(".catmenu>div").click(function(){
-      $(".catmenu>div").removeClass("active");
-      $(this).addClass("active");
-  });
-  $(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
+      sticky = header.offsetTop - nav.clientHeight;
+       stickyMenu()
+     };
+     
+     function stickyMenu() {
+    
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    };
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+     $(".catmenu>div").click(function(){
+         $(".catmenu>div").removeClass("active");
+         $(this).addClass("active");
+     });
+     $(document).on('click', 'a[href^="#"]', function (event) {
+       event.preventDefault();
+   
+       $('html, body').animate({
+           scrollTop: $($.attr(this, 'href')).offset().top
+       }, 500);
+     });
   });
+  
+  
+  
+
+
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105741341-2"></script>
   <script>
