@@ -623,6 +623,7 @@ a, a:hover {
 }
 
 @media (min-width: 450px) and (max-width: 768px){
+  
   .navbar-fixed-top {
     padding: 10px 0px;
   }
@@ -692,12 +693,17 @@ a, a:hover {
      position: relative;
      top:-130px;
    }
+   .progressText{
+      font-size: 36px;
+      height: 250px;
+      line-height: 190px;
+   }
 }
 @media (min-width: 20px) and (max-width: 450px) {
   div.bgdiv{
    background: url(../img/waveCopy4.svg) no-repeat right 395px;
    background-size: 114%;
-
+    min-height: 500px;
   }
   div.bgdiv2{
     background: url(../img/wave2.svg) no-repeat -171px -119px;
@@ -843,6 +849,14 @@ a, a:hover {
    #individual_walkthrough,#require_walkthrough,#prod_walkthrough,#unbox_walkthrough{
      position: relative;
      top:-110px;
+   }
+   .progressText{
+      font-size: 32px;
+      height: 200px;
+      line-height: 150px;
+   }
+   #footer{
+    font-size: 13px;
    }
 
 }
