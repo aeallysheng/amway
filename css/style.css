@@ -66,6 +66,10 @@ h3{
 section{
   padding-bottom: 70px;
 }
+/*.navbar-default .navbar-toggle:focus, .navbar-default{
+     background-color: transparent;
+     color: #fff;
+}*/
 .my-ctn.nomargin{
   margin-bottom: 0px;
 }
@@ -609,16 +613,39 @@ a, a:hover {
   padding: 20px 0px;
   color: #fff;
 }
-.navbar-toggle {
-  color: #fff;
+.navbar-default .navbar-toggle {
+  background-color: #fff;
+    color: #000;
 }
-.navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover {
     background-color: #fff;
     color: #000;
 }
- .navbar-toggle:focus{
+ .navbar-default .navbar-toggle:focus{
+    background-color: #fff;
     color: #000;
  }
+ .navbar-default .navbar-toggle.collapsed:focus{
+    background-color: #fff;
+    color: #000;
+ }
+.navbar-default .navbar-toggle.collapsed {
+   background-color: transparent;
+    color: #fff;
+}
+.navbar-default .navbar-toggle.collapsed:hover {
+     background-color: transparent;
+    color: #fff;
+}
+ .navbar-default .navbar-toggle.collapsed:focus{
+     background-color: transparent;
+    color: #fff;
+ }
+ .navbar-default .navbar-toggle.collapsed:focus{
+    background-color: transparent;
+    color: #fff;
+ }
+ 
  .navctn{
  
   max-width: 680px; 
@@ -805,10 +832,7 @@ a, a:hover {
     background: url(../img/wave2.svg) no-repeat -171px -119px;
     background-size: 100%;
   }
-  .navbar-toggle:hover, .navbar-toggle {
-    background-color: #fff;
-    color: #000;
-  }
+
   .navbar-toggle {
     margin-top: 0px;
     margin-right: 0px;
