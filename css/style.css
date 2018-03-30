@@ -58,7 +58,7 @@ h2 span{
    color: #fff;
    background:url(../img/title_bar.png) center top no-repeat; 
    background-size: cover; 
-
+   text-shadow: 2px 2px 4px #04426f;
 }
 h3{
   font-size: 24px;
