@@ -170,6 +170,14 @@ section{
   background:url(../img/index-top.png) center top no-repeat; 
   background-size: cover; 
 }
+.wrapper.walk{
+  padding-bottom: 43%;
+  background-image:url(../img/dlTop.png); 
+}
+.wrapper.discount{
+  padding-bottom: 43%;
+  background-image:url(../img/saleTop.png); 
+}
 
 .wrapper img{
   width: 100%;
@@ -405,6 +413,66 @@ h3 span.month_no span{
 .sticky + .container{
    padding-top: 150px;
 }
+.saleevent .evt_title {
+  border-bottom: 4px solid #0db2ff;
+  margin-bottom: 30px;
+}
+.saleevent .evt_title h1{
+  font-size: 36px;
+  color: #0db2ff;
+}
+.saleevent .evt_title h3{
+  border :none;
+  font-size: 18px;
+  color: #074b7d;
+}
+.saleevent .evt_title h3 span.date{
+  font-size: 24px;
+  margin-right:16px; 
+}
+.evt_ctn div.buy{
+  padding-left: 60px;
+  background: url(../img/group3.png) no-repeat 0px 0px;
+  padding-top: 12px;
+}
+.evt_ctn div.gift{
+  padding-left: 60px;
+  background: url(../img/group2.png) no-repeat 0px 0px;
+  padding-top: 12px;
+}
+.evt_ctn h3{
+    /*background: url(../img/group3.png) no-repeat 0px 0px;*/
+
+    color: #0db2ff;
+    margin :0px 0px 10px 0px; 
+}
+.evt_ctn h3 img{
+  margin-right: 10px;
+  /*background-image: url(../img/group3.png); */
+}
+.evt_ctn h3 span{
+  display: inline-block;
+}
+.evt_ctn h3.gift{
+  /*background-image: url(../img/group2.png); */
+}
+.evt_ctn h4{
+   color: #074b7d;
+   font-size: 18px;
+}
+
+.evt_ctn p{
+  line-height: 1.5;
+}
+.evt_ctn p span{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  color: #4a4a4a;
+}
+.evt_giftimg{
+  padding-top: 50px;
+}
 @media (max-width: 768px) {
 .navbar-collapse {
 		background: none;
@@ -417,9 +485,6 @@ h3 span.month_no span{
   padding: 25px 0;
 }
 
-.wrapper {
- /* padding: 75px 0px 0px 0px;*/
-}
 
 
 /****/
@@ -698,6 +763,19 @@ a, a:hover {
       height: 250px;
       line-height: 190px;
    }
+   .saleevent .evt_title h1{
+     font-size: 28px;
+     margin-bottom: 5px;
+   }
+   .saleevent .evt_title h3{
+     margin-top: 10px;
+   }
+   .saleevent .evt_title h3 span.date{
+    font-size: 20px;
+   }
+   .evt_ctn h3{
+     font-size: 22px;
+   }
 }
 @media (min-width: 20px) and (max-width: 450px) {
   div.bgdiv{
@@ -857,6 +935,17 @@ a, a:hover {
    }
    #footer{
     font-size: 13px;
+   }
+   .saleevent .evt_title h1{
+     font-size: 24px;
+   }
+   .saleevent .evt_title h3{
+     margin-top: 10px;
+     font-size: 16px;
+   }
+   .saleevent .evt_title h3 span.date{
+    font-size: 18px;
+    margin-right: 5px;
    }
 
 }
