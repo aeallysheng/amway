@@ -453,6 +453,7 @@ h3 span.month_no span{
 }
 .saleevent .evt_title h1 .evt_name{
   font-size: 44px;
+  font-weight: bold;
 
 }
 .evt_ctn div.buy{
